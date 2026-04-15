@@ -1,5 +1,7 @@
 # Rock Failure Mode Classification
 
+**Authors:** Erick Chauke, Dr Milka Madahana, & Dr John Ekoru
+
 A supervised machine learning project that classifies failure modes in rock specimens tested under laboratory compression conditions. Failure mode codes (2B, 3B, 4B, XA, YA) are assigned by trained technicians after each test. This project trains a model to predict those codes from measurements already recorded during the test.
 
 ## Dataset

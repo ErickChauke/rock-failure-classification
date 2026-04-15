@@ -7507,8 +7507,7 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration -->
-<style>
+<!-- End of mermaid configuration --><style>
 @media (prefers-color-scheme: dark) {
     html {
         filter: invert(1) hue-rotate(180deg);
@@ -7530,7 +7529,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Automated-Failure-Mode-Classification-in-Rock-Mechanics">Automated Failure Mode Classification in Rock Mechanics<a class="anchor-link" href="#Automated-Failure-Mode-Classification-in-Rock-Mechanics">¶</a></h1><p>When a rock sample is crushed in a laboratory test, the way it breaks is recorded as a failure mode code - for example, 2B means a shear fracture at a specific angle, and XA means the sample broke along an existing crack. These codes are currently assigned by a person looking at the broken sample, which takes time and can vary between observers.</p>
+<h1 id="Automated-Failure-Mode-Classification-in-Rock-Mechanics">Automated Failure Mode Classification in Rock Mechanics<a class="anchor-link" href="#Automated-Failure-Mode-Classification-in-Rock-Mechanics">¶</a></h1><p><strong>Authors:</strong> Erick Chauke, Dr Milka Madahana, &amp; Dr John Ekoru</p>
+<hr/>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>When a rock sample is crushed in a laboratory test, the way it breaks is recorded as a failure mode code - for example, 2B means a shear fracture at a specific angle, and XA means the sample broke along an existing crack. These codes are currently assigned by a person looking at the broken sample, which takes time and can vary between observers.</p>
 <p>This project trains a machine learning model to predict the failure mode code from measurements already recorded during the test, such as the size of the sample, how much pressure was applied, and how stiff the rock was. If the model can do this reliably, it could speed up analysis and make the results more consistent.</p>
 <p>The data comes from two types of laboratory tests: uniaxial compression (the sample is squeezed from top and bottom with no side pressure, about 177 samples) and triaxial compression (side pressure is added to simulate conditions deep underground, about 351 samples). A third test type in the raw data, the Brazilian tensile test, does not have failure mode codes and is not used for classification. A fourth dataset covering rock mass field observations is also excluded because it describes the rock at a tunnel or mine face, not individual laboratory samples.</p>
 <p>Three classification methods are tested: Logistic Regression, Random Forest, and Support Vector Machine. The best one is tuned further, and the results are explained using a tool called SHAP, which shows which measurements had the most influence on each prediction.</p>
